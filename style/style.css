@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/shara\ desert.jpg);
+    background-size: cover;
+}
+/* Header Style  */
+.logo img{
+    width: 90px;
+    height: 80px;
+}
+.header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 20px;
+align-items: center;
+}
+.logo{
+    margin-left: 100px;
+}
+.nav-items{
+    align-items: center;
+    display: flex;
+    margin-right: 100px;
+}
+.list ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 60px;
+}
+.list a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 18px;
+}
+.barger{
+    padding: 40px;
+
+}
+
+.second-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Left-Contanier style  */
+.left-conatiner{
+    margin-left: 100px;
+}
+.left-conatiner h1{
+    text-align: start;
+    font-size: 110px;
+    color: #ffff;
+}
+.left-conatiner p{
+    text-align: justify;
+    color: #ffff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    /* font-weight: 700; */
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+/* right-contanier style  */
+
+
+/* grid Style  */
+.right-contanier{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 300px 300px;
+    gap: 30px;
+    row-gap: 40px;
+    margin-bottom: 150px;
+    margin-top: 40px;
+    margin-right: 100px;
+
+}
+.child{
+    width: 250px;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 20px 0 0 20px;
+    text-align: start;
+    color: #ffff;
+    line-height: 30px;
+}
+.child:hover{
+    transform: translateY(-15px);
+    transition: 0.5s ease;
+
+}
+
+.child1{
+    background-image: url(../img/pic-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.child2{
+    background-image: url(../img/pic-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.child3{
+    background-image: url(../img/pic-3.png);
+    background-position: center;
+    background-size: cover;    
+}
+.child4{
+    background-image: url(../img/pic-4.png);
+    background-position: center;
+    background-size: cover;    
+}
+
+
+
+
+/* Tablet View  */
+@media screen and (min-width:650px) and (max-width:900px){
+    .list ul li {
+        margin-right: 35px;
+
+    }
+    .barger{
+        padding: 0px;
+    
+    }
+    .left-conatiner h1 {
+        text-align: start;
+        font-size: 70px;
+        color: #ffff;
+    }
+
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .right-contanier{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 400px;
+        grid-template-rows: 250px;
+    }
+    .child{
+        width: 500px;
+        height: 250px;
+    }
+
+}
+
+/* Mobile View  */
+@media screen and (min-width:240px) and (max-width:650px){
+    .logo{
+        margin-left: 10px;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-items{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .list ul li {
+        display: block;
+        margin-right: 10px;
+    }
+    .barger{
+        padding: 1px;
+    }
+    .left-conatiner{
+        margin-left: 10px;
+    }
+
+    .left-conatiner h1 {
+        text-align: start;
+        font-size: 40px;
+        color: #ffff;
+    }
+
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .right-contanier{
+        display: grid;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        grid-template-columns: 250px;
+        grid-template-rows: 300px;
+        margin-right: 10px;
+    }
+    .child{
+        width: 250px;
+        height: 300px;
+    }
+
+}
